@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Cp1252"/>
+<title></title>
+</head>
+<body>
+
+		<div data-role="page" data-theme="c" data-fullscreen="true" id="page-gImage">
+		
+		<label for="search-mini">Search Input:</label>
+		<input type="search" name="search-mini" id="search-mini" value="" data-mini="true" />
+
+		<div data-role="content" id="gimage-content">
+			<div id="gimage_canvas"></div>
+		</div><!-- /content -->
+		
+			<!-- The list of images (thumbs) -->
+			<div id="thumbs_container_google">
+			    <div class="loader" style="display:none;"></div>
+			    <ul id="thumbs" class="thumbView" style="display:none;">
+			    </ul>
+			</div>
+			<!-- The list of images (thumbs) -->
+		
+		
+		<div data-role="footer" data-theme="b" data-position="fixed">
+		<div data-role="navbar">
+		<ul>
+	    	<li><a onclick ="$.mobile.changePage('index.html', {});" data-role="button" data-icon="home">Home</a></li>
+	    	<li><a onclick ="$.mobile.changePage('blog.html', {});" data-role="button"  >Back</a></li>
+		</ul>
+		</div><!-- /navbar -->
+		</div><!-- /footer -->
+		</div><!-- /Google page -->
+
+</body>
+</html>

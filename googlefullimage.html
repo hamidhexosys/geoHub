@@ -1,0 +1,36 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                          "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+ 	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+<body>
+
+<!-- The single image container -->
+<div data-role="page" id="photo_container" >
+	<div data-role="header"  calss = "header" data-position="fixed" data-tap-toggle="false"  data-theme="b" >
+		
+	<div data-role="controlgroup" data-mini="true" class="ui-btn-right" data-type="horizontal" data-collapsed="true" data-theme="b" data-content-theme="d">
+			<a onclick = "addgImagetoGallery(currentImage);" data-icon="plus"    data-role="button"   >Add</a>
+			<a href = "googleimage.html" data-icon="back"  data-role="button"  >Back</a>
+	</div>		
+		
+	</div> <!-- header -->
+
+    <div class="loader" style="display:none;"></div>
+    <div id="theimage" class="singleimage"></div>
+
+    <div class="descriptionWrapper">
+        <p id="description"></p>
+        <div id="prev" style="display:none;"></div> 
+        <div id="next" style="display:none;"></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

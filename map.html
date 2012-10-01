@@ -1,0 +1,24 @@
+<html>
+
+<body>
+
+	<div data-role="page" data-theme="c" data-fullscreen="true" id="page-map">
+
+	<div data-role="content" id="map-content">
+		<div id="map_canvas"></div>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="b" data-position="fixed">
+	<div data-role="navbar">
+	<ul>
+    	<li><a onclick=" $.mobile.changePage('index.html', {});">Home</a></li>
+    	<li><a onclick="centerMainMap(currentPos);">Find Me</a></li>
+    	<li><a onclick="set_position_flag(currentPos);"  class="refresh">Save</a></li>
+	</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+	</div><!-- /Map page -->
+
+
+</body>
+</html>
